@@ -1,0 +1,779 @@
+/*Title of the game*/
+.main{
+  margin: 20px;
+  font-size: 150px;
+  color: #23291F;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+/* Images in the menu */
+.menuImage{
+  display: inline-block;
+  width:200px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  margin:auto;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*Menu Image1*/
+.menuImage1{
+  display: block;
+  margin: auto;
+}
+/* backgroundImage for main page */
+.gameBgImage{
+  background :url(images/camouflage.png) repeat center center;
+  background-size: cover;
+}
+/* Instruction closing button */
+.cross{
+  width:20px;
+}
+.dropDivIntial{
+  background-color: white;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  margin:auto;
+}
+.dropDivCorrect{
+  background-color: green;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  margin:auto;
+}
+/* Container of menu's back button */
+.menuBackbtnDiv{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:40;
+}
+/* Back button of menu */
+.menuBackbtn{
+  display: block;
+  border:2px solid white;
+  color:white;
+  font-size: 16px;
+  background-color: #23291F;
+  margin: auto;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+/* For the Instruction Page pop-up view*/
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(35,41,31,1);
+}
+/* Content of the instruction Page */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  color:#64a03c;
+  font-size: 20px;
+}
+/* The Close Button of instruction Page */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* Hover styles on close button */
+.close:hover,.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Sound Icon Image */
+.soundIcon{
+  width:50px;
+  border-radius: 50%;
+  float: right;
+}
+/* Sound button of settings page*/
+.soundButton{
+  position: relative;
+  top:20px;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  margin-top:20px;
+  border-radius: 8%;
+  width: 280px;
+}
+/* Help Icon Image */
+.help{
+  width: 280px;
+  margin:auto;
+  margin-top: 40px;
+  border:2px solid white;
+}
+/* Span element of the buttons of setting page */
+.settingSpan{
+  font-size: 50px;
+  color: white;
+  float: left;
+}
+/* Icon image of Settings page */
+.settingIcon{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+/* Back button of the settings page */
+.settingBackBtn{
+  position: relative;
+  top:40px;
+}
+/* Completion level image of counting game */
+.likeImage{
+  position: relative;
+  display: block;
+  margin:auto;
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+/* Styles  forcontainer of Settings Page */
+.instr{
+  margin:auto;
+  text-align: left;
+  background-color:#23291F;
+  color:white;
+}
+/* Styles for paragraph where question are displayed */
+.question{
+  font-size:72px;
+  margin:2%;
+  color:white;
+}
+/*  Statement below the question */
+.answer{
+  color:white;
+  font-size: 48px;
+}
+/* Aligning all the elements of the game in center */
+body{
+  text-align: center;
+}
+/* Animation applied on the white box of the  Counting game*/
+.checkAnswer{
+  animation: checkAnswer 1s ease-out 1;
+}
+@keyframes checkAnswer {
+  0% {
+    background-color: red;
+  }
+  50%{
+  background-color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/*Container of gaming page */
+.gamePage{
+  background-color: #344a33;
+  border-radius: 20%;
+  width: 600px;
+  height: 600px;
+}
+/*  Question statement of spelling game*/
+.spellGameQuestion{
+  font-size:60px;
+  color:white;
+}
+/* Score representer */
+.scoreStatement{
+  font-size:48px;
+  color:white;
+}
+/* Aligns all the elements to center */
+.center{
+  text-align: center;
+}
+/* Options for the Mathematical operations game */
+.game1Options{
+  background-color: #23291F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 64px;
+  margin:10px;
+  width:150px;
+  border:2px solid white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* True or false buttons of the spelling the number game */
+.game2Button{
+  width:100px;
+  border-radius:50%;
+  background-color: #23291F;
+  margin: 10px;
+}
+/* Question statement for counting game */
+.countStmt{
+  font-size:60px;
+  color:white;
+  margin: 0;
+}
+/* Display the active page */
+.page {
+  text-align: center;
+  opacity: 0.9;
+  margin: auto;
+  margin-top:30px;
+}
+/* Hiding the Inactive page */
+.hide {
+  display: none;
+  z-index: -1; /* moves this behind others */
+}
+/*Container from which the elements are to be dragged */
+.dragDiv{
+  width:180px;
+  margin:auto;
+}
+/* Container from which the elements are to be dropped  */
+.dropDiv{
+  background:white;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  margin:auto;
+}
+  /* Style for Home and back button */
+.play,.instructions{
+  background-color: #23291F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  margin:10px;
+  border:2px solid white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+/* Tick or cross images of the spelling the number game */
+.game2ButtonImages{
+  width:80px;
+}
+/* Container of Tick or cross images of the spelling the number game */
+.optionButtonDiv{
+  position: absolute;
+  bottom:30%;
+  left:0;
+  right:0;
+}
+/* Container element having pay and setting button of the entrance page */
+.buttonDiv{
+  position: absolute;
+  bottom: 40;
+  left: 0;
+  right:0;
+}
+/* Images of the Question of counting game */
+.quesImage{
+  width:50px;
+  margin:8px;
+  height:50px;
+}
+/* Number pad for the counting game */
+.numberImage{
+  width:30px;
+  margin:8px;
+  height:40px;
+  border:1px solid white;
+}
+/* Styles for game type page buttons*/
+.gameType{
+  display: table;
+  margin: 4 auto;
+  width:45%;
+  height:15%;
+  border-radius: 8px;
+  font-size: 30;
+  color:white;
+  background-color: #23291F;
+}
+/* Animation for the entrance page*/
+.entrancePage{
+  animation: entrancePage 2s ease-out 1;
+}
+
+@keyframes entrancePage {
+  0% {
+    opacity: 0;
+    background ='url(images/bg_image.jpg) no-repeat center center';
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1 ;
+    background ='url(images/bg_image.jpg) no-repeat center center';
+  }
+  89% {
+    opacity: 1;
+    background ='url(images/bg_image.jpg) no-repeat center center';
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    background ='url(images/bg_image.jpg) no-repeat center center';
+    transform: translateZ(-1000em);
+  }
+}
+/*Intial state Tank image at level completion */
+.intialTank{
+  width:150px;
+  opacity:0.5;
+}
+/* Tank image at level completion  */
+.tank{
+  width:150px;
+  animation: entrancePage 2s ease-out 1;
+}
+@keyframes tank {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1 ;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5) translateZ(-1000em);
+  }
+}
+
+
+/*This contains the set of styles required for the Mobile screen resolutions Like Samsung s5, iphone 5/6/7/8 , iphone X*/
+@media screen and (max-width: 420px) {
+
+/*Title of the game*/
+  .main{
+    margin: 20px;
+    font-size: 78px;
+    color: #23291F;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+  /* Images in the menu */
+  .menuImage{
+    display: inline-block;
+    width:120px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin:10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /*Back button of menu */
+  .menuBackbtn{
+    display: block;
+    border:2px solid white;
+    color:white;
+    font-size: 12px;
+    background-color: #23291F;
+    margin: auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  /*Container of gaming page */
+  .gamePage{
+    background-color: #344a33;
+    border-radius: 20%;
+    height: 90%;
+    width:100%;
+  }
+  /* Sound button of settings page */
+  .soundButton{
+    position: relative;
+    top:20px;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    border-radius: 8%;
+    width: 200px;
+  }
+  /* Span element of the button of setting page */
+  .settingSpan{
+    font-size: 35px;
+    color: white;
+    float: left;
+  }
+  /* Back button of the settings page */
+  .settingBackBtn{
+    position: relative;
+    top:80px;
+  }
+  /*Intial state Tank image at level completion */
+  .intialTank{
+    width:100px;
+    opacity:0.5;
+  }
+  /* Tank image at level completion   */
+  .tank{
+
+    width:100px;
+    animation: entrancePage 2s ease-out 1;
+  }
+  @keyframes tank {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-0.75em);
+    }
+    20% {
+      opacity: 1 ;
+    }
+    89% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.5) translateZ(-1000em);
+    }
+  }
+  /* Score representer at the end of the level */
+  .scoreStatement{
+    font-size:48px;
+    color:white;
+  }
+  /* Styles for paragraph where question are displayed */
+  .question{
+    font-size:64px;
+    margin:2%;
+    color:white;
+  }
+  /* Statement below the question line */
+  .answer{
+    color:white;
+    font-size: 40px;
+  }
+  /* Question statement of spelling game */
+  .spellGameQuestion{
+    font-size:54px;
+    color:white;
+  }
+  /* Question statement for counting game */
+  .countStmt{
+    font-size:54px;
+    color:white;
+    margin: 0;
+  }
+  /* Images of the Question of counting game */
+  .quesImage{
+    width:30px;
+    margin:8px;
+  }
+  /* Styles for game type page buttons*/
+  .gameType{
+    display: table;
+    margin: 4 auto;
+    width:80%;
+    height:15%;
+    border-radius: 8px;
+    font-size: 30;
+    color:white;
+    background-color: #23291F;
+  }
+  /* Content of the instruction Page */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color:#64a03c;
+    font-size: 16px;
+  }
+  /* Option buttons for Mathematical Operations game */
+  .game1Options{
+    background-color: #23291F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 64px;
+    margin:10px;
+    width:120px;
+    border:2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /* For the Instruction Page pop-up view*/
+  .modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 40%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(35,41,31,1);
+  }
+}
+/*This contains the set of styles required for the Tablet screen resolutions */
+@media screen and (min-width: 422px) and (max-width:1100px) {
+  /* Images of the menu page */
+  .menuImage{
+    display: block;
+    width:250px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin:auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  /*Container of gaming page */
+  .gamePage{
+    background-color: #344a33;
+    border-radius: 20%;
+    height: 90%;
+    width:100%;
+  }
+  /* Back button of the settings page */
+  .settingBackBtn{
+    position: relative;
+    top:200px;
+  }
+  /*Intial state Tank image at level completion */
+  .intialTank{
+    width:200px;
+    opacity:0.5;
+  }
+  /* Tank image at level completion   */
+  .tank{
+    width:200px;
+    animation: entrancePage 2s ease-out 1;
+  }
+  @keyframes tank {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-0.75em);
+    }
+    20% {
+      opacity: 1 ;
+    }
+    89% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.5) translateZ(-1000em);
+    }
+  }
+  /* Images of the Question of counting game */
+  .quesImage{
+    width:70px;
+    margin:8px;
+  }
+  /* Number pad for the counting game */
+  .numberImage{
+    width:60px;
+    margin:8px;
+    height:80px;
+    border:1px solid white;
+  }
+  /*Container from which the elements are to be dragged */
+  .dragDiv{
+    width:300px;
+    margin:auto;
+  }
+  /* Container from which the elements are to be dropped  */
+  .dropDiv{
+    background:white;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    margin:auto;
+  }
+  /* Question statement for counting game */
+  .countStmt{
+    font-size:80px;
+    color:white;
+    margin: 0;
+  }
+  /* Styles for paragraph where question are displayed */
+  .question{
+    font-size:100px;
+    margin:2%;
+    color:white;
+  }
+  /*  Statement below the question */
+  .answer{
+    color:white;
+    font-size: 80px;
+  }
+  /* Option buttons for Mathematical Operations game */
+  .game1Options{
+    background-color: #23291F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 64px;
+    margin:10px;
+    width:250px;
+    border:2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /* Style for Home and back button */
+  .play,.instructions{
+    background-color: #23291F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 8px;
+    margin:10px;
+    border:2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  /* Styles for game type page buttons*/
+  .gameType{
+    display: table;
+    margin: 4 auto;
+    width:80%;
+    height:15%;
+    border-radius: 8px;
+    font-size: 54px;
+    color:white;
+    background-color: #23291F;
+  }
+  /* Back button of menu */
+  .menuBackbtn{
+    display: block;
+    border:2px solid white;
+    color:white;
+    font-size: 32px;
+    background-color: #23291F;
+    margin: auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  /* Content of the instruction Page */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    color:#64a03c;
+    font-size: 34px;
+  }
+  /* Question statement of spelling game */
+  .spellGameQuestion{
+    font-size:100px;
+    color:white;
+  }
+  /* True or false buttons of the spelling the number game */
+  .game2Button{
+    width:250px;
+    border-radius:50%;
+    background-color: #23291F;
+    margin: 10px;
+  }
+  /* Tick or cross images of the spelling the number game */
+  .game2ButtonImages{
+    width:150px;
+  }
+  /* Container of Tick or cross images of the spelling the number game */
+  .optionButtonDiv{
+    position: absolute;
+    bottom:400;
+    left:0;
+    right:0;
+  }
+  /* Sound button of settings page*/
+  .soundButton{
+    position: relative;
+    top:20px;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    border-radius: 8%;
+    width: 350px;
+  }
+  /* Help Icon Image */
+  .help{
+    width: 280px;
+    margin:auto;
+    margin-top: 40px;
+    border:2px solid white;
+  }
+  /* Span element of the buttons of setting page */
+  .settingSpan{
+    font-size: 64px;
+    color: white;
+    float: left;
+  }
+  /* Icon image of Settings page */
+  .settingIcon{
+    width: 180px;
+    display: block;
+    margin: auto;
+  }
+  /* Sound Icon Image */
+  .soundIcon{
+    width:80px;
+    border-radius: 50%;
+    float: right;
+  }
+  /* Score representer */
+  .scoreStatement{
+    font-size:72px;
+    color:white;
+  }
+}
